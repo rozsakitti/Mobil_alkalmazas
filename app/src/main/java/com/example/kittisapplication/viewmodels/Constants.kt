@@ -1,6 +1,5 @@
 package com.example.kittisapplication.viewmodels
 
-import com.example.kittisapplication.Question
 import com.example.kittisapplication.R
 
 object Constants{
@@ -15,7 +14,7 @@ object Constants{
         val que1 = Question(
             1, "What car brand do you see in the picture?",
             R.drawable.hyundai,
-            "Hyundai",
+             "Hyundai",
             "BMW",
             "Skoda",
             "Ford",

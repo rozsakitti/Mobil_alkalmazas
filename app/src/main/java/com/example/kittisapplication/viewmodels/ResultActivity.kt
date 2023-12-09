@@ -6,15 +6,11 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.example.kittisapplication.R
-import com.example.kittisapplication.viewmodels.Constants
-import com.example.kittisapplication.viewmodels.MainActivity
-
-
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var tvName: TextView
     private lateinit var tvScore: TextView
-    private lateinit var bttnFinish: Button
+    private lateinit var btnFinish: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +18,7 @@ class ResultActivity : AppCompatActivity() {
 
         tvName = findViewById(R.id.tvName)
         tvScore = findViewById(R.id.tvScore)
-        bttnFinish = findViewById(R.id.bttnFinish)
+        btnFinish = findViewById(R.id.btnFinish)
 
         val username = intent.getStringExtra(Constants.USER_NAME)
         tvName.text = username
@@ -31,7 +27,7 @@ class ResultActivity : AppCompatActivity() {
 
         tvScore.text = "Your score is $correctAnswer out of $totalQuestions"
 
-        bttnFinish.setOnClickListener{
+        btnFinish.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
 

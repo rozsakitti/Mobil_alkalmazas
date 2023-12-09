@@ -6,9 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import com.example.kittisapplication.QuizQuestionsActivity
+import com.example.kittisapplication.viewmodels.QuizQuestionsActivity
 import com.example.kittisapplication.R
-import com.example.kittisapplication.viewmodels.Constants
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

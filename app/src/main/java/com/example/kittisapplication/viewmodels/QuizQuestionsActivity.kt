@@ -12,9 +12,6 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.kittisapplication.R
-import com.example.kittisapplication.ResultActivity
-import com.example.kittisapplication.viewmodels.Constants
-import com.example.kittisapplication.viewmodels.Question
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
